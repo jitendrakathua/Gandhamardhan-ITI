@@ -1,0 +1,234 @@
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+    height:322px;
+    /*margin:24px 0 0 0;*/	
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Theme Styles */
+.flexslider {
+    position: relative;
+    zoom: 1;
+    border-radius: 6px;
+    border:6px solid #e6e6e6;
+}
+
+/* Edit it if you want */
+.flex-container {
+    min-width:100%;
+    max-width: 100%;
+    height:auto;	
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+
+/* Direction Nav */
+.flex-direction-nav a {
+    display: block;
+    position: absolute;
+    margin: -17px 0 0 0;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    z-index: 9999;
+    /*background-color: #159cd3;*/
+}
+
+.flex-direction-nav a:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 13px;
+    top: 11px;
+    left: 11px;
+    /*background: url(../images/arrows.png) no-repeat;*/
+}
+
+.flex-direction-nav a:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 35px;
+}
+
+.flex-direction-nav .flex-next {
+    right: -80px;
+    top: 183px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    background: transparent url(../images/next.png)no-repeat 0 0;
+    height:70px;
+    width:70px;
+}
+
+.flex-direction-nav .flex-prev {
+    top: 183px;
+    left: -80px;
+    background: transparent url(../images/previous.png) no-repeat 0 0;
+    height:70px;
+    width:70px;
+}
+
+.flex-direction-nav .flex-next:before { background-position: -9px 0; left: 15px; }
+.flex-direction-nav .flex-prev:before { background-position: 0 0; }
+
+.flex-direction-nav .flex-next:after {
+    /*right: 0;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #31611e;*/
+}
+
+.flex-direction-nav .flex-prev:after {
+    /*left: 0;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #31611e;*/
+}
+
+
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+    position: absolute;
+    width: 100%;
+    bottom: -34px;
+    left:0px;
+    text-align: center;
+    margin: 0 0 0 -10px;
+}
+
+.flex-control-nav li {
+    display: inline-block;
+    zoom: 1;
+}
+
+.flex-control-paging li a {
+    display: block;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    background-color: #c2c2c2;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+}
+
+.flex-control-paging li a.flex-active {
+    background-color: #f50161;		
+}
+
+
+
+/* Captions */
+.flexslider .slides ul{
+    height:60px;
+    width:100%;
+    position:absolute;
+    top:385px;
+    left:0;	
+}
+.flexslider .slides ul li{
+    float:left;
+    display:inline-block;
+}
+
+
+.flexslider .slides .red-line{ 
+    background-color: #d3261d;
+    height: auto;
+    font:14px/4 'trebuchet_msregular';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.flexslider .slides .red-line .heading{
+    font:31px/2 'trebuchet_msregular';
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    padding-left: 2%;
+}
+
+.volunteer-today-bt{
+    font:20px/1.8 'trebuchet_msbold';
+    color:#fff;
+    text-align:center;
+    background-color: #005899;
+    border-radius: 6px;
+    padding: 8px 25px;
+    margin:5px 4%;
+}
+
+.learnmore{
+    font:14px/4.1 'trebuchet_msregular';
+    color: #fff;
+    text-transform: uppercase;
+}
+

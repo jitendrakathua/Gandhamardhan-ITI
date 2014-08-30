@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2014, 1:24:46 PM
+    Author     : jitendra
+*/
+
+/*Starting Utilities Mostly Applicable Pls. Don''t Edit*/ 
+
+body, div, span, h1, h2, h3, h4, h5, h6, hr, table, tr, td, p, ul, li, dd, fieldset, form, input, hr{ margin:0; padding:0;}ul, li, ol{ list-style-type:none;}
+a, a:hover{text-decoration: none;}img, img:hover, input{border:none;}
+
+.pull-left{ float:left;}
+.pull-right{ float:right;}
+.block-display{ display:block;}
+.text-center{ text-align: center !important;}
+.text-left{text-align: left !important;}
+.text-right{text-align: right !important;}
+.clear-fix{ float:none; clear:both;}
+.margin-l{ margin-left: 0 !important;}
+.margin-r{ margin-right: 0 !important;}
+.border-radious-n{ border-radius: 0 !important;}
+.uppercase{ text-transform: uppercase;}
+.inline-block-display{ display: inline-block !important;}
+.italic{ font-style: italic !important;}
+hr{border: none; height: 1px; background-color: #c0c0c0;}
+.border-n{ border: none !important;}
+.red{ color: #f10000 !important;}
+.blue{color:#0e76bc !important;}
+
+/*Starting Utilities Mostly Applicable Pls. Don''t Edit*/ 
+
+body{
+    color: #28287b;
+    font:14px/1.3  'open_sansregular';
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#top-bg{
+    background: #fefefe; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fefefe 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fefefe 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+    height: 104px;
+    border-bottom: 1px solid #56569f;
+    margin-bottom: 15px;
+}
+
+#top-bg .water-mark-img{ background: url(../images/watermark-img.jpg) no-repeat right top;}
+
+#top-bg #left-content{
+    float: left;
+    padding: 5px 0 0 0;
+}
+
+#top-bg #left-content h1{
+    font:24px/1 'ralewaybold';
+    color: #257bd4;
+    padding: 5px 0 0 10px;
+}
+
+#top-bg #left-content h1 span{ 
+    display: block;
+    text-transform: uppercase;
+    color: #4141a2;
+    font-size: 36px;
+    line-height: 1;
+}
+#top-bg #right-content .top{margin-top: 10px;}
+#top-bg #right-content .top li{
+    font:14px/1.2  'open_sansregular';
+    color: #26268a;
+    padding: 0 10px;
+    border-right: 1px solid #26268a;
+    display: inline-block;
+}
+#top-bg #right-content .top li img{ margin-right: 6px; vertical-align: middle;}
+
+#top-bg #right-content .nav{ 
+    margin: 20px 0;
+    background-color: #cac6c7;
+    border-radius: 6px;
+    padding: 8px 0;
+    text-align: center;
+    border:1px solid #FFF;
+    background: url(../images/nav-bg.png) repeat;
+}
+
+#top-bg #right-content .nav li{
+    font:14px/1.2  'open_sansregular';
+    color: #26268a;
+    padding: 0 10px;
+    border-right: 1px solid #FFF;
+    display: inline-block;
+}
+
+#top-bg #right-content .nav li:last-child{border:none;}
+
+#top-bg #right-content .nav li a{color: #26268a;}
+#top-bg #right-content .nav li a:hover{color: #000;}
+
+
+#content{}
+#content #left-nav{width: 27.70%;}
+#content #left-nav img{width: 100%; }
+#content #left-nav ul{ 
+    border: 1px solid #c1c1c1;
+    border-top: 0; 
+    margin: 0 !important;
+    padding: 10px 0;
+    border-radius:0 0 6px 6px;
+    position: relative;
+    /*top:-25px;*/
+}
+
+#content #left-nav ul li{
+    background: url(../images/list-img.jpg) no-repeat left center;
+    display: block;
+    border-bottom: 1px solid #c1c1c1;
+    margin: 0 5px;
+}
+#shadow{ background: url(../images/shadow.jpg) no-repeat center top; width: 100%; height: 20px;}
+#content #left-nav .head-img{
+    background: url(../images/quick-link-img.jpg) no-repeat center top;
+    width: 100%;
+    height: 56px;
+}
+#content #left-nav ul li:last-child{border:none;}
+#content #left-nav ul li a{
+    color: #28287b;
+    font:14px/1.3  'open_sansregular';
+    padding: 8px 5px 8px 15px;
+    display: block;
+}
+
+#content #right-content{ width: 70%;}
+
+#content #right-content h1{
+    font:26px/1.8 'titillium_webregular';
+    color: #343495;
+    text-transform: uppercase;
+}
+
+#content #right-content #welcome-txt{
+    color: #333333;
+    font:14px/1.6  'open_sansregular';
+    margin-bottom: 20px;
+}
+#content #right-content #welcome-txt img{ margin-right: 10px; margin-bottom: 5px;}
+
+#content #right-content .rounded-box{
+    background: #f7f7f7;
+    box-shadow: 0 2px 3px 0 #e7e7e7;
+    width: 48%;
+    border-radius: 8px;
+    min-height: 250px;
+    margin: 20px 0;
+}
+.notice-board, .tenders{
+    background: url(../images/notice-board.png) no-repeat center top;
+    width: 100%;
+    height: 61px;
+    border-radius: 8px 8px 0 0;
+}
+
+.tenders{background: url(../images/tenders.png) no-repeat center top;}
+
+#content #right-content .rounded-box ul li{
+    background: url(../images/list-img-2.jpg) no-repeat left center;
+    display: block;
+    border-bottom: 1px dotted #c1c1c1;
+    margin: 5px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    padding: 5px 15px;
+}
+#content #right-content .rounded-box ul li:last-child{border: none;}
+#content #right-content .rounded-box ul li h2{font:bold 12px/1.3  'open_sansregular';}
+    
+
+#footer{ 
+    background: #333333;
+    padding: 10px 0;
+    font:13px/1.3  'open_sansregular';
+    color: #FFF;
+    text-align: center;
+}
